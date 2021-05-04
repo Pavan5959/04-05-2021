@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Collapse</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <button class="btn btn-success" data-toggle="collapse" data-target="#para1">Collapse</button>
+      <div id="para1" class="collapse">
+         This is Collapse Button
+      </div><br><br>
+      <button class="btn btn-success" data-toggle="collapse" data-targert="#para2">Collapse</button>
+      <div id="para2" class="collapse show">
+         This is Collapse Button
+      </div><br>
+      <h5 class="text-primary">Accordion</h5>
+      <div class="accordion">
+        <div class="card">
+                <div class="card-header">
+                   <a href="#value1" data-toggle="collapse">HTML</a>
+                   <div id="value1" class="collapse">
+                       <div class="card-body">
+                        Hyper Text Markup Language
+                       </div> 
+                   </div><br><br>
+                   <a href="#value2" data-toggle="collapse">CSS</a>
+                   <div id="value2" class="collapse">
+                       <div class="card-body">
+                        Casscading Style Sheet
+                       </div> 
+                   </div><br><br>
+                   <a href="#value3" data-toggle="collapse">JS</a>
+                   <div id="value3" class="collapse">
+                       <div class="card-body">
+                        JavaScrip
+                       </div> 
+                   </div><br><br>
+                   <a href="#value4" data-toggle="collapse">BST-4</a>
+                   <div id="value4" class="collapse">
+                       <div class="card-body">
+                      BootStrap-4
+                       </div> 
+                   </div><br><br>
+                </div>
+        </div>
+      </div>
+      <h5 class="text-secondary">using data-parent to get only one output</h5>
+      <div class="accordion">
+        <div class="card" id="web">
+                <div class="card-header">
+                   <a href="#value5" data-toggle="collapse">HTML</a>
+                   <div id="value5" class="collapse" data-parent="#web">
+                       <div class="card-body">
+                        Hyper Text Markup Language
+                       </div> 
+                   </div><br><br>
+                   <a href="#value6" data-toggle="collapse">CSS</a>
+                   <div id="value6" class="collapse" data-parent="#web">
+                       <div class="card-body">
+                        Casscading Style Sheet
+                       </div> 
+                   </div><br><br>
+                   <a href="#value7" data-toggle="collapse">JS</a>
+                   <div id="value7" class="collapse" data-parent="#web">
+                       <div class="card-body">
+                        JavaScrip
+                       </div> 
+                   </div><br><br>
+                   <a href="#value8" data-toggle="collapse">BST-4</a>
+                   <div id="value8" class="collapse" data-parent="#web">
+                       <div class="card-body">
+                      BootStrap-4
+                       </div> 
+                   </div><br><br>
+                </div>
+        </div>
+      </div>
+      <h5 class="text-warning">Using card-link not to get underline</h5>
+      <div class="accordion">
+        <div class="card" id="web">
+                <div class="card-header">
+                   <a href="#valu5" data-toggle="collapse" class="card-link">HTML</a>
+                   <div id="valu5" class="collapse" data-parent="#web">
+                       <div class="card-body">
+                        Hyper Text Markup Language
+                       </div> 
+                   </div><br><br>
+                   <a href="#valu6" data-toggle="collapse" class="card-link">CSS</a>
+                   <div id="valu6" class="collapse" data-parent="#web">
+                       <div class="card-body">
+                        Casscading Style Sheet
+                       </div> 
+                   </div><br><br>
+                   <a href="#valu7" data-toggle="collapse" class="card-link">JS</a>
+                   <div id="valu7" class="collapse" data-parent="#web">
+                       <div class="card-body">
+                        JavaScrip
+                       </div> 
+                   </div><br><br>
+                   <a href="#valu8" data-toggle="collapse" class="card-link">BST-4</a>
+                   <div id="valu8" class="collapse" data-parent="#web">
+                       <div class="card-body">
+                      BootStrap-4
+                       </div> 
+                   </div><br><br>
+                </div>
+        </div>
+      </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
